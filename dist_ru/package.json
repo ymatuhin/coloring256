@@ -1,0 +1,18 @@
+{
+  "name": "coloring256",
+  "version": "0.0.1",
+  "scripts": {
+    "predev": "yarn clear",
+    "dev": "jekyll serve --config _config.ru.yml --limit_posts 15",
+    "prebuild": "yarn clear",
+    "build": "run-p build:*",
+    "postbuild":
+      "echo 'coloring256.com' > ./dist_en/CNAME && echo 'coloring256.ru' > ./dist_ru/CNAME",
+    "build:ru": "jekyll build --config _config.ru.yml",
+    "build:en": "jekyll build --config _config.en.yml",
+    "clear": "rm -rf dist_ru/** && rm -rf dist_en/**"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
+  }
+}

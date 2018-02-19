@@ -1,0 +1,14 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+produrl: https://coloring256.ru
+alternateurl: https://coloring256.com
+title: Раскраски онлайн
+description: description
+permalink: /:title
+markdown: kramdown
+destination: dist_ru
+lang: ru
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

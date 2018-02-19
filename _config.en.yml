@@ -1,0 +1,14 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+produrl: https://coloring256.com
+alternateurl: https://coloring256.ru
+permalink: /:title
+title: Coloring pages online
+description: description
+markdown: kramdown
+destination: dist_en
+lang: en
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

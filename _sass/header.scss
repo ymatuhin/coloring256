@@ -1,0 +1,50 @@
+.header {
+  background: $brand-color;
+
+  a {
+    color: #fff;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  text-decoration: none;
+}
+
+.logo-text {
+  width: 10px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.logo-image {
+  margin-right: 12px;
+  width: 42px;
+  height: 42px;
+
+  fill: #fff;
+}
+
+.nav {
+  display: flex;
+  font-weight: 300;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link + .nav-link {
+  margin-left: 24px;
+}

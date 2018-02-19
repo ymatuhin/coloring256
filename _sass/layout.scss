@@ -1,0 +1,15 @@
+.layout {
+    display: flex;
+    align-items: flex-start;
+}
+
+.layout-sidebar {
+    margin-right: 24px;
+    padding-top: 60px;
+    min-width: 280px;
+    width: 280px;
+}
+
+.layout-middle {
+    flex: 1;
+}

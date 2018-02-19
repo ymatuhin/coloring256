@@ -1,0 +1,20 @@
+$space-size: 16px;
+
+.preview-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$space-size/2;
+    // align-items: flex-start;
+
+    .preview {
+        margin: $space-size/2;
+        width: calc(100%/3 - #{$space-size});
+    }
+}
+
+.preview {
+    padding: 12px;
+    border: 1px solid $grey-color-light;
+    border-radius: 6px;
+    background: #fff;
+}

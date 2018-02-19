@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+  color: #222;
+  font: 400 16px/1.5 Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal; }
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 1200px; }
+
+img {
+  max-width: 100%; }
+
+.header {
+  background: #2a7ae2; }
+  .header a {
+    color: #fff; }
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  text-decoration: none; }
+
+.logo-text {
+  width: 10px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.1; }
+
+.logo-image {
+  margin-right: 12px;
+  width: 42px;
+  height: 42px;
+  fill: #fff; }
+
+.nav {
+  display: flex;
+  font-weight: 300; }
+
+.nav-link {
+  text-decoration: none; }
+
+.nav-link + .nav-link {
+  margin-left: 24px; }
+
+.layout {
+  display: flex;
+  align-items: flex-start; }
+
+.layout-sidebar {
+  margin-right: 24px;
+  padding-top: 60px;
+  min-width: 280px;
+  width: 280px; }
+
+.layout-middle {
+  flex: 1; }
+
+.sidebar-pane {
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background: #fff; }
+
+.sidebar-pane-header {
+  padding: 10px 18px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #f6f6f6;
+  font-weight: 500; }
+
+.sidebar-pane-content {
+  padding: 10px 18px; }
+
+.section-header {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 32px; }
+
+.footer {
+  margin: 64px auto 0;
+  padding: 12px 0;
+  max-width: 800px;
+  color: #828282;
+  text-align: center; }
+
+.tag {
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 9999px;
+  background: #2a7ae2;
+  color: #fff;
+  vertical-align: top; }
+
+.preview-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px; }
+  .preview-box .preview {
+    margin: 8px;
+    width: calc(100%/3 - 16px); }
+
+.preview {
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background: #fff; }
+
+.home-lead {
+  margin: 0 auto;
+  padding: 96px 0;
+  max-width: 800px;
+  text-align: center; }
+
+.home-lead-title {
+  margin: 0;
+  font-size: 48px; }
+
+.home-lead-text {
+  margin: 0;
+  font-size: 24px; }
