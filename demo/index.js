@@ -1,0 +1,1 @@
+/Users/ym/Projects/coloring256/dist/index.js
