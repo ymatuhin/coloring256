@@ -10,9 +10,8 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-  </div>
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
+    <div class="game-box / js-coloring" data-image="/static/outline/{{ page.outline }}"></div>
+    <script src="/game/index.js"></script>
+  </div>
 </article>

@@ -123,6 +123,11 @@ img {
   border-radius: 6px;
   background: #fff; }
 
+.game-box {
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px; }
+
 .home-lead {
   margin: 0 auto;
   padding: 96px 0;
