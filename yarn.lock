@@ -1851,6 +1851,10 @@ event-stream@~3.3.0:
     stream-combiner "~0.0.4"
     through "~2.3.1"
 
+eventemitter3@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.0.1.tgz#4ce66c3fc5b5a6b9f2245e359e1938f1ab10f960"
+
 events@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
@@ -1999,6 +2003,12 @@ first-chunk-stream@^2.0.0:
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-2.0.0.tgz#1bdecdb8e083c0664b91945581577a43a9f31d70"
   dependencies:
     readable-stream "^2.0.2"
+
+flatry@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/flatry/-/flatry-1.0.8.tgz#8935c0518ff6e64b53f1f4c06e0795166eedf95e"
+  dependencies:
+    is-promise "^2.1.0"
 
 flatten@^1.0.2:
   version "1.0.2"
@@ -3232,6 +3242,10 @@ meow@^3.7.0:
     redent "^1.0.0"
     trim-newlines "^1.0.0"
 
+microevent@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/microevent/-/microevent-1.0.0.tgz#aa4a1316e095f5bac5836cb3ea934548e4b41ad3"
+
 micromatch@^2.1.5, micromatch@^2.3.7:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-2.3.11.tgz#86677c97d1720b363431d04d0d15293bd38c1565"
@@ -3321,6 +3335,10 @@ mississippi@^2.0.0:
     pumpify "^1.3.3"
     stream-each "^1.1.0"
     through2 "^2.0.0"
+
+mitt@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.1.3.tgz#528c506238a05dce11cd914a741ea2cc332da9b8"
 
 mixin-object@^2.0.1:
   version "2.0.1"

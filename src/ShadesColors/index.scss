@@ -1,0 +1,23 @@
+.shades-colors {
+  display: flex;
+  justify-content: center;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  @media (max-width: 780px) {
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+  }
+
+  & > .color-cell {
+    flex: 1;
+    margin: 5px;
+    margin-bottom: 0;
+
+    @media (max-width: 780px) {
+      margin: 2px;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+$hash: z46Juzcyx;
+
+.#{$hash}-container {
+}
+
+.#{$hash}-coloring {
+}
+
+.#{$hash}-active-color {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.#{$hash}-colors > div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 5vh;
+}
+
+.#{$hash}-color {
+  display: block;
+  flex: 1 1 6.666666666%;
+  min-height: 30px;
+  // height: 5vh;
+  cursor: pointer;
+}

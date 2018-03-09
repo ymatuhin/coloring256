@@ -13,6 +13,8 @@
     "css-loader": "^0.28.9",
     "jsdom-quokka-plugin": "^1.0.10",
     "lodash.throttle": "^4.1.1",
+    "microevent": "^1.0.0",
+    "mitt": "^1.1.3",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
     "sass-loader": "^6.0.6",
@@ -21,15 +23,22 @@
     "webpack-cli": "^2.0.6"
   },
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "quokka": {
     "pro": true,
     "babel": true,
-    "plugins": ["jsdom-quokka-plugin"],
+    "plugins": [
+      "jsdom-quokka-plugin"
+    ],
     "jsdom": {
-      "html":
-        "<title>Demo</title><div class='js-coloring' data-image='./australia.png'></div>"
+      "html": "<title>Demo</title><div class='js-coloring' data-image='./australia.png'></div>"
     }
+  },
+  "dependencies": {
+    "eventemitter3": "^3.0.1",
+    "flatry": "^1.0.8"
   }
 }
