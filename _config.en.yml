@@ -1,7 +1,7 @@
 baseurl: "" # the subpath of your site, e.g. /blog
 produrl: https://coloring256.com
 alternateurl: https://coloring256.ru
-permalink: /:title
+permalink: /:categories/:title
 title: Coloring pages online
 description: description
 markdown: kramdown

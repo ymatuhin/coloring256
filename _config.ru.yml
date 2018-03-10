@@ -3,7 +3,7 @@ produrl: https://coloring256.ru
 alternateurl: https://coloring256.com
 title: Раскраски онлайн
 description: description
-permalink: /:title
+permalink: /:categories/:title
 markdown: kramdown
 destination: dist_ru
 lang: ru
