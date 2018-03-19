@@ -1,0 +1,2 @@
+export const toggleOnSvg = `<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path d="M14 28h-4v10h10v-4h-6v-6zm-4-8h4v-6h6v-4h-10v10zm24 14h-6v4h10v-10h-4v6zm-6-24v4h6v6h4v-10h-10z"/></svg>`;
+export const toggleOffSvg = `<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path d="M10 32h6v6h4v-10h-10v4zm6-16h-6v4h10v-10h-4v6zm12 22h4v-6h6v-4h-10v10zm4-22v-6h-4v10h10v-4h-6z"/></svg>`;

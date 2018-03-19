@@ -1,13 +1,13 @@
 .coloring-area {
   display: flex;
-  overflow: hidden;
-  align-items: center;
-  flex: 1;
-  justify-content: center;
+  flex-direction: column;
+  margin: auto;
   padding: 10px;
+  // max-height: 80vh;
 
   svg {
     max-width: 100%;
     max-height: 100%;
+    height: auto;
   }
 }

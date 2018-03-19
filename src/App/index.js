@@ -3,13 +3,16 @@ import { rootSelector, imageAttributeName } from '../config';
 import { ColoringArea } from '../ColoringArea';
 import { PrimaryColors } from '../PrimaryColors';
 import { ShadesColors } from '../ShadesColors';
+import { Fullscreen } from '../Fullscreen';
 import { Color } from '../Color';
+import { enter, exit } from '../utils/fullscreen';
 
 export class App {
   constructor() {
     this.color = new Color({ h: 0, s: 100, l: 50 });
     this.coloringArea = null;
     this.primmaryColors = null;
+    this.fullscreen = null;
 
     this.$root = document.querySelector(rootSelector);
     if (!this.$root)
@@ -54,12 +57,21 @@ export class App {
     this.$root.appendChild(node);
   }
 
+  createFullButton() {
+    const node = document.createElement('button');
+    node.setAttribute('type', 'button');
+    this.fullscreen = new Fullscreen(node);
+    this.fullscreen.on('toggle', this.toggleFullScreen.bind(this));
+    this.$root.appendChild(node);
+  }
+
   onAreaReady(node) {
     this.$root.innerHTML = '';
     this.$root.classList.remove('loading');
     this.$root.appendChild(node);
     this.createShadeColors();
     this.createPrimaryColors();
+    this.createFullButton();
   }
 
   onAreaError(error) {
@@ -68,5 +80,12 @@ export class App {
 
   onAreaClick(target) {
     this.coloringArea.fillTarget(target, this.color.toString());
+  }
+
+  toggleFullScreen(state) {
+    if (state) enter(this.$root);
+    else exit(this.$root);
+
+    this.$root.classList[state ? 'add' : 'remove']('coloring-root__fullscreen');
   }
 }

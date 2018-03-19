@@ -17,17 +17,17 @@ export class ColoringArea extends EventEmitter {
 
   async init() {
     this.$root.classList.add('coloring-area');
-    this.$root.innerHTML = await this.loadImage();
+    const [err, imageText] = await flatry(this.loadImage());
+    if (err) return this.emit('error', err);
+    this.$root.innerHTML = imageText;
     this.emit('ready');
     this.$root.addEventListener('click', this.onClick.bind(this), false);
   }
 
   async loadImage() {
-    const promise = downloadAsText(this.imageUrl);
-    const [err, imageText] = await flatry(promise);
-    if (err) return this.emit('error', err);
-    this.originalImage = imageText;
-    return imageText;
+    const image = downloadAsText(this.imageUrl);
+    this.originalImage = image;
+    return image;
   }
 
   onClick({ target }) {

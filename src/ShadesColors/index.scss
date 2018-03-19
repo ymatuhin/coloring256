@@ -4,6 +4,27 @@
   padding-right: 5px;
   padding-left: 5px;
 
+  &:before,
+  &:after {
+    flex: 0.5;
+    margin: 5px 2.5px;
+    min-width: 14px;
+    min-height: 14px;
+    max-width: 30px;
+    content: '';
+
+    @media (max-width: 780px) {
+      margin: 2px 1px;
+      margin-bottom: 0;
+    }
+
+    &:after {
+      display: block;
+      padding-bottom: 100%;
+      content: '';
+    }
+  }
+
   @media (max-width: 780px) {
     padding-right: 2px;
     padding-bottom: 2px;
